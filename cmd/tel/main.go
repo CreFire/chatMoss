@@ -13,7 +13,10 @@ import (
 func main() {
 
 	botToken := viper.GetString("telegramApiToken")
-	u, _ := url.Parse("http://127.0.0.1:10808")
+	port := viper.Get("proxy.port")
+	uri := fmt.Sprintf("http://127.0.0.1:%d", port)
+	logrus.Info("uri:%v", uri)
+	u, _ := url.Parse(uri)
 	client := &http.Client{
 		Transport: &http.Transport{
 			// 设置代理

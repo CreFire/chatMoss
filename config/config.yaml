@@ -1,2 +1,7 @@
-telegramApiToken: 6231282704:AAF4FrU9m5rZColim2-7sWBKWITcwPH2qlQ
-ChatGptApi: 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
+api:
+  telegramApiToken: 6231282704:AAF4FrU9m5rZColim2-7sWBKWITcwPH2qlQ
+  ChatGptApi: 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
+  ChatGptFourApi: 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
+
+proxy:
+  port: 7890
